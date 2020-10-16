@@ -22,4 +22,10 @@ public class CustomerService {
     {
        return  customerRepository.findAll();
     }
+
+    public void deleteById(Long id)
+    {
+        customerRepository.deleteById(id);
+
+    }
 }
